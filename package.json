@@ -7,9 +7,20 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
+    "express": "^4.15.4",
     "express-static": "^1.2.4",
     "mustache-express": "^1.2.5"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaimitch/week7-day3.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/jaimitch/week7-day3/issues"
+  },
+  "homepage": "https://github.com/jaimitch/week7-day3#readme",
+  "description": ""
 }

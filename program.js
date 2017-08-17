@@ -1,8 +1,15 @@
+const express = require('express');
 const mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
 const Ninja = require('./models/ninja.js');
 
 mongoose.connect('mongodb://localhost:27017/NinjasApplication');
+
+application.engine('mustache', mustacheExpress());
+application.set('view engine', 'mustache');
+applicaiton.set('views', './views');
+
+application.use(express.static('public'));
 
 var steve = new Ninja({ name: 'Steve', email: 'steve@pirate.ninja', password: 'qwer1234', power: 75 });
 var jaren = new Ninja({ name: 'Jaren', email: 'jaren@pirate.ninja', password: 'qwer1234', power: 99 });
